@@ -24,11 +24,16 @@
   <a href="#top" class="logo" aria-label="BoldBrands"><img src="logo/logo.png" alt="BoldBrands"></a>
   <nav>
     <a href="#servicos">Serviços</a>
-    <a href="#tese">Tese</a>
-    <a href="#portfolio">Portfólio</a>
+    <a href="#metodo">Método</a>
+    <a href="#portfolio">Cases</a>
     <a href="#socios">Sócios</a>
   </nav>
-  <a href="#contato" class="pill">Fale com a gente</a>
+  <!-- TROCAR AQUI: foto (img/contato-bruno.jpg), nome e cargo do cartão de contato -->
+  <a href="#contato" class="contact-card" aria-label="Vamos conversar? Fale com Bruno Leal">
+    <img src="img/contato-bruno.jpg?v=2" alt="" width="240" height="240">
+    <span class="cc-txt"><small>Vamos conversar?</small><b>Bruno Leal</b><em>Diretor de Criação / Sucesso do Cliente</em></span>
+    <i>↗</i>
+  </a>
 </header>
 
 <main id="top">
@@ -36,7 +41,7 @@
 <!-- ===== HERO =====
      TROCAR AQUI: o texto da bio (parágrafo class="lead"). "Be great. Be bold." fica nos spans .split -->
 <section class="hero">
-  <div class="hero-glow"></div>
+  <div class="hero-bg" aria-hidden="true"><img src="img/hero-bg.webp" alt="" width="3200" height="1800"><div class="hero-dim"></div></div>
   <p class="eyebrow reveal">Consultoria de marca · Est. 2026</p>
   <h1 class="hero-title">
     <span class="line"><span class="split">Be great.</span></span>
@@ -44,7 +49,15 @@
   </h1>
   <div class="hero-foot">
     <p class="reveal lead">Somos a BoldBrands, especialistas em construir marcas. Acreditamos que diferenciação não é apenas uma escolha criativa, mas uma decisão de negócio. Combinamos visão empresarial, estratégia, design e soluções de IA para construir marcas mais relevantes, distintas e valiosas.</p>
-    <a href="#tese" class="scroll reveal">Scroll <i></i></a>
+    <div class="hero-do reveal">
+      <p class="hd-label">O que fazemos</p>
+      <ol>
+        <li><a href="#servicos" data-go="0"><i>01/</i><span>Estratégia de marca</span></a></li>
+        <li><a href="#servicos" data-go="1"><i>02/</i><span>Arquitetura de marca</span></a></li>
+        <li><a href="#servicos" data-go="2"><i>03/</i><span>Gestão de Marketing</span></a></li>
+        <li><a href="#servicos" data-go="3"><i>04/</i><span>Soluções de IA</span></a></li>
+      </ol>
+    </div>
   </div>
 </section>
 
@@ -68,43 +81,109 @@
   <span class="corner br">Estratégia<br>Marca<br>Marketing<br>IA</span>
 
   <ul class="svc-list">
-    <li class="svc r1" data-i="0"><h3><span>Estratégia</span></h3></li>
+    <li class="svc r1" data-i="0"><h3><span>Estratégia</span> <span>de marca</span></h3></li>
     <li class="svc r2" data-i="1"><h3><span>Arquitetura</span> <span>de marca</span></h3></li>
     <li class="svc r3" data-i="2"><h3><span>Gestão de</span> <span>Marketing</span></h3></li>
     <li class="svc r4" data-i="3"><h3><span>Soluções</span> <span>de IA</span></h3></li>
   </ul>
 
   <div class="svc-box" aria-live="polite">
-    <div class="pane" data-i="0"><img src="logo/icone-branco.png" alt=""><p>Texto de marcação. Aqui entra a descrição de Estratégia: diagnóstico do negócio, posicionamento e a tese que orienta as decisões da marca.</p><a>Detalhes ↗</a></div>
-    <div class="pane" data-i="1"><img src="logo/icone-branco.png" alt=""><p>Texto de marcação. Aqui entra a descrição de Arquitetura de marca: identidade, sistema visual e verbal e como cada parte se conecta.</p><a>Detalhes ↗</a></div>
-    <div class="pane" data-i="2"><img src="logo/icone-branco.png" alt=""><p>Texto de marcação. Aqui entra a descrição de Gestão de Marketing: estratégia que não termina no PDF, com execução e processos.</p><a>Detalhes ↗</a></div>
-    <div class="pane" data-i="3"><img src="logo/icone-branco.png" alt=""><p>Texto de marcação. Aqui entra a descrição de Soluções de IA: ferramentas e fluxos que otimizam processos e custos de marketing.</p><a>Detalhes ↗</a></div>
+    <div class="pane" data-i="0"><img src="logo/icone-branco.png" alt=""><p>Entendemos o seu negócio e definimos o posicionamento que faz a sua marca ser escolhida.</p><a href="#passo-1">Detalhes ↗</a></div>
+    <div class="pane" data-i="1"><img src="logo/icone-branco.png" alt=""><p>Identidade visual e verbal completa, para a sua marca ser reconhecida em segundos.</p><a href="#passo-2">Detalhes ↗</a></div>
+    <div class="pane" data-i="2"><img src="logo/icone-branco.png" alt=""><p>Marketing que roda ao lado do seu time, conectado a vendas e focado em resultado.</p><a href="#passo-3">Detalhes ↗</a></div>
+    <div class="pane" data-i="3"><img src="logo/icone-branco.png" alt=""><p>Ferramentas e automações sob medida para produzir mais, gastando menos.</p><a href="#passo-4">Detalhes ↗</a></div>
   </div>
 </section>
 
-<!-- ===== RESPIRO (Be great. / Be bold. com o ícone) =====
-     Não precisa mexer, só se for trocar a frase. -->
-<section class="breath">
-  <div class="glow g1"></div><div class="glow g2"></div><div class="glow g3"></div>
-  <div class="lockup" id="lockup">
-    <div class="l1"><span class="a"><span>Be great.</span></span><span class="mark"><img class="m m1" src="logo/icone-azul.png" alt=""><img class="m m2" src="logo/icone-azul.png" alt=""><img class="m m3" src="logo/icone-azul.png" alt=""></span></div>
-    <div class="l2"><span class="ghost" aria-hidden="true">Be great.</span><span class="a"><span>Be bold.</span></span></div>
+<!-- ===== METODOLOGIA =====
+     TROCAR AQUI: título, textos e "Saídas" de cada passo. Imagens: img/thumbs/ (aparecem em preto e branco). -->
+<section class="method" id="metodo">
+  <div class="legend"><span>◆ (03)</span><span>(Do estratégico ao tático)</span></div>
+  <div class="m-head">
+    <h2 class="mid m-title"><span class="d">Passo a passo, a quatro mãos.</span> <span class="l">Do estratégico ao tático, lado a lado com você.</span></h2>
+    <div class="m-side reveal">
+      <p>Diferente de uma consultoria, vamos do estratégico ao tático. Diferente de uma agência, trabalhamos ao seu lado, construindo a sua marca para que ela seja Bold.</p>
+      <a class="ulink" href="#contato">Contate-nos <i>↗</i></a>
+    </div>
   </div>
+  <ol class="steps">
+    <li class="step reveal" id="passo-1">
+      <span class="sn">01</span>
+      <div class="sph"><video class="loopvid" src="img/metodo/passo-1.mp4" poster="img/metodo/passo-1.webp" muted loop playsinline preload="metadata" width="1080" height="1350" aria-hidden="true"></video></div>
+      <div class="sbody">
+        <p class="stag"><b>Ouvir</b> · Passo 1</p>
+        <h3>Estratégia de marca</h3>
+        <p class="stxt">Antes de criar, perguntamos. Entendemos o que sua empresa faz, por que faz e para quem, e onde está a diferença que o mercado ainda não enxerga. Imersão inicial, análise interna e externa, posicionamento e estratégia de marca. O resultado é uma base clara para decidir melhor, vender com mais valor e crescer com direção.</p>
+        <p class="sout-l">Saídas</p>
+        <ul class="sout"><li>Estratégia de marca</li><li>Posicionamento</li><li>Essência da marca</li><li>Criação de nome</li><li>Arquitetura da marca</li><li>Tom de voz</li><li>Perfil do público-alvo</li><li>Bússola estratégica</li></ul>
+      </div>
+    </li>
+    <li class="step reveal" id="passo-2">
+      <span class="sn">02</span>
+      <div class="sph"><img src="img/thumbs/bytecode.webp" alt="" loading="lazy"></div>
+      <div class="sbody">
+        <p class="stag"><b>Identificar</b> · Passo 2</p>
+        <h3>Arquitetura de marca</h3>
+        <p class="stxt">Agora a estratégia ganha forma. Logotipo, cor, tipografia, imagem e voz: todo o DNA visual e verbal da sua marca, construído para diferenciá-la, ser reconhecida em segundos e continuar funcionando daqui a cinco anos. Uma identidade que atrai os clientes certos, sustenta o valor do seu preço e alinha o seu time.</p>
+        <p class="sout-l">Saídas</p>
+        <ul class="sout"><li>Design de logotipo</li><li>Design corporativo</li><li>Identidade visual</li><li>Tipografia</li><li>Paleta de cores</li><li>Imagens</li><li>Tom de voz da marca</li><li>Manual da marca</li><li>Sistema de design</li></ul>
+      </div>
+    </li>
+    <li class="step reveal" id="passo-3">
+      <span class="sn">03</span>
+      <div class="sph"><video class="loopvid" src="img/metodo/passo-3.mp4" poster="img/metodo/passo-3.webp" muted loop playsinline preload="metadata" width="960" height="540" aria-hidden="true"></video></div>
+      <div class="sbody">
+        <p class="stag"><b>Construir</b> · Passo 3</p>
+        <h3>Gestão de Marketing</h3>
+        <p class="stxt">Agora a marca vai para o mundo. Site, materiais impressos, embalagens, eventos, redes sociais, filmes e campanhas: cada ponto de contato com o seu cliente, integrado e contando a mesma história. Traduzimos a estratégia em ações de marketing que geram demanda e resultados que dá para medir.</p>
+        <p class="sout-l">Saídas</p>
+        <ul class="sout"><li>Plano de marketing</li><li>Site e experiência digital</li><li>Campanhas e ativações</li><li>Conteúdo e redes sociais</li><li>Materiais e embalagens</li><li>Acompanhamento de resultados</li></ul>
+      </div>
+    </li>
+    <li class="step reveal" id="passo-4">
+      <span class="sn">04</span>
+      <div class="sph"><img src="img/metodo/passo-4.webp" alt="" width="1600" height="1066" loading="lazy"></div>
+      <div class="sbody">
+        <p class="stag"><b>Acelerar</b> · Passo 4</p>
+        <h3>Soluções de IA</h3>
+        <p class="stxt">IA aplicada à sua marca e aos seus processos de marketing. Criamos soluções que otimizam rotinas e aceleram a produção de materiais <em>always on</em> (aquele job semanal, sabe?), reduzindo custo e mantendo a consistência da marca. Seu time produz mais, com a mesma qualidade e sem perder a identidade.</p>
+        <p class="sout-l">Saídas</p>
+        <ul class="sout"><li>Automação de peças recorrentes</li><li>Geração de imagens com padrão de marca</li><li>Fluxos de conteúdo</li><li>Treinamento do time</li><li>Assistentes de marca</li></ul>
+      </div>
+    </li>
+  </ol>
 </section>
 
-<!-- ===== PORTFÓLIO =====
-     Cada <article class="work"> é um trabalho: imagem (img/projeto-N.svg), cliente (small), título (h5), texto (p) e serviços (em).
-     Para adicionar outro trabalho (até 6), copie um <article> inteiro. Imagens QUADRADAS. -->
-<section class="portfolio" id="portfolio">
-  <div class="sec-head">
-    <p class="eyebrow reveal">Portfólio</p>
-    <h2 class="mid reveal">Trabalhos selecionados.</h2>
+<!-- ===== CASES =====
+     Cada <a class="ccard"> é um case (imagem em img/thumbs/, página em cases/). Os anos são provisórios: confirmar. -->
+<section class="cases" id="portfolio">
+  <aside class="cs-left">
+    <h2 class="cs-label">Cases</h2>
+    <p class="cs-note">Projetos dos sócios antes da fundação da BoldBrands.</p>
+    <a class="ulink" href="#contato">Solicitar um projeto <i>↗</i></a>
+  </aside>
+  <div class="cs-center">
+      <a class="ccard" href="cases/coc-educacao/" aria-label="Ver o case COC Educação">
+        <div class="cwin"><img src="img/thumbs/coc-educacao.webp" alt="Aplicação da identidade COC em mídia exterior" width="1920" height="1080" loading="lazy"></div>
+        <div class="ccap"><span>01</span><b>Identidade visual · COC Educação</b><span>2026</span></div>
+      </a>
+      <a class="ccard" href="cases/g4-valley/" aria-label="Ver o case G4 Valley">
+        <div class="cwin"><video class="loopvid" src="img/thumbs/g4-valley.mp4" poster="img/thumbs/g4-valley-poster.webp" muted loop playsinline preload="auto" width="1280" height="720" aria-label="Animação do monolito do G4 Valley"></video></div>
+        <div class="ccap"><span>02</span><b>Identidade visual · Evento · G4 Valley</b><span>—</span></div>
+      </a>
+      <a class="ccard" href="cases/especie-em-extincao/" aria-label="Ver o case Espécie em Extinção">
+        <div class="cwin"><img src="img/thumbs/especie-em-extincao.webp" alt="Arte de abertura da campanha Espécie em Extinção" width="1920" height="1080" loading="lazy"></div>
+        <div class="ccap"><span>03</span><b>Campanha · G4 Educação · Espécie em Extinção</b><span>2024</span></div>
+      </a>
+      <a class="ccard" href="cases/bytecode/" aria-label="Ver o case Bytecode">
+        <div class="cwin"><img src="img/thumbs/bytecode.webp" alt="Relógios inteligentes com a marca Bytecode" width="1920" height="1080" loading="lazy"></div>
+        <div class="ccap"><span>04</span><b>Identidade visual · Bytecode</b><span>2022</span></div>
+      </a>
+      <a class="ccard" href="cases/commercia/" aria-label="Ver o case Commercia">
+        <div class="cwin"><img src="img/thumbs/commercia.webp" alt="Ecobag com a marca Commercia" width="1920" height="1080" loading="lazy"></div>
+        <div class="ccap"><span>05</span><b>Identidade visual · Commercia</b><span>2025</span></div>
+      </a>
   </div>
-  <div class="works">
-    <article class="work"><div class="sq img"><img src="img/projeto-1.svg" alt="Projeto 1"></div><div class="sq info"><span class="idx">01</span><div><small>Cliente 01</small><h5>Nome do projeto</h5><p>Texto de marcação explicando o projeto: o desafio, o que foi feito e o resultado para o negócio.</p><em>Estratégia, Identidade</em></div></div></article>
-    <article class="work"><div class="sq img"><img src="img/projeto-2.svg" alt="Projeto 2"></div><div class="sq info"><span class="idx">02</span><div><small>Cliente 02</small><h5>Nome do projeto</h5><p>Texto de marcação explicando o projeto: o desafio, o que foi feito e o resultado para o negócio.</p><em>Reposicionamento</em></div></div></article>
-    <article class="work"><div class="sq img"><img src="img/projeto-3.svg" alt="Projeto 3"></div><div class="sq info"><span class="idx">03</span><div><small>Cliente 03</small><h5>Nome do projeto</h5><p>Texto de marcação explicando o projeto: o desafio, o que foi feito e o resultado para o negócio.</p><em>Arquitetura de marca</em></div></div></article>
-              </div>
 </section>
 
 <!-- ===== SÓCIOS =====
@@ -117,20 +196,36 @@
   </div>
   <div class="cards">
     <article class="member reveal">
-      <figure><img src="img/socio-bruno.jpg" alt="Bruno Leal" loading="lazy">
-        <figcaption><span><b>Bruno Leal</b><small>Sócio · cargo</small></span><i>in</i></figcaption></figure>
+      <figure><img src="img/socio-bruno.jpg?v=2" alt="Bruno Leal" loading="lazy">
+        <figcaption><span><b>Bruno Leal</b><small>Design e Sucesso do Cliente</small></span><i>in</i></figcaption></figure>
       <p class="bio">Bio de marcação. Espaço para a trajetória, especialidade e o que Bruno traz para a BoldBrands.</p>
     </article>
     <article class="member reveal">
-      <figure><img src="img/socio-eduardo.jpg" alt="Eduardo Furin" loading="lazy">
-        <figcaption><span><b>Eduardo Furin</b><small>Sócio · cargo</small></span><i>in</i></figcaption></figure>
+      <figure><img src="img/socio-eduardo.jpg?v=2" alt="Eduardo Furin" loading="lazy">
+        <figcaption><span><b>Eduardo Furin</b><small>Marketing e Inteligência Artificial</small></span><i>in</i></figcaption></figure>
       <p class="bio">Bio de marcação. Espaço para a trajetória, especialidade e o que Eduardo traz para a BoldBrands.</p>
     </article>
     <article class="member reveal">
-      <figure><img src="img/socio-felipe.jpg" alt="Felipe Bechstedt" loading="lazy">
-        <figcaption><span><b>Felipe Bechstedt</b><small>Sócio · cargo</small></span><i>in</i></figcaption></figure>
+      <figure><img src="img/socio-felipe.jpg?v=2" alt="Felipe Bechstedt" loading="lazy">
+        <figcaption><span><b>Felipe Bechstedt</b><small>Estratégia de Marca</small></span><i>in</i></figcaption></figure>
       <p class="bio">Bio de marcação. Espaço para a trajetória, especialidade e o que Felipe traz para a BoldBrands.</p>
     </article>
+  </div>
+</section>
+
+<!-- ===== PERGUNTAS FREQUENTES =====
+     TROCAR AQUI: cada .faq-i é uma pergunta (botão .faq-q) e a resposta (.faq-a p). Preço, prazos e "um dia útil" precisam ser confirmados. -->
+<section class="faq" id="faq">
+  <div class="legend"><span>◆ (04)</span><span>(O que sempre surge na primeira conversa)</span></div>
+  <div class="faq-list">
+      <div class="faq-i open"><button type="button" class="faq-q" aria-expanded="true"><span>O que diferencia a BoldBrands de outras consultorias e estúdios de branding?</span><i></i></button><div class="faq-a"><p>Em escopo, pouca coisa: também fazemos estratégia, identidade e experiência de marca. A diferença está em como trabalhamos. Sentamos ao seu lado e vamos até o fim, da primeira conversa à marca funcionando no mercado, em vez de entregar um diagnóstico que fica na gaveta. E se a sua ideia não for boa, vamos dizer. Com jeito, para você continuar gostando da gente.</p></div></div>
+      <div class="faq-i"><button type="button" class="faq-q" aria-expanded="false"><span>Para quem é a Arquitetura de Marca?</span><i></i></button><div class="faq-a"><p>Para quem percebeu que o jeito antigo parou de funcionar. Fundadores que precisam de mais visibilidade, empresas em crescimento, fusão ou reestruturação, marcas com logotipo de 2003 e discurso de 2008. Se você foi concordando com a cabeça enquanto lia isso, provavelmente é para você.</p></div></div>
+      <div class="faq-i"><button type="button" class="faq-q" aria-expanded="false"><span>Como vocês usam IA no meu negócio?</span><i></i></button><div class="faq-a"><p>Definimos quais ferramentas fazem sentido para a sua realidade, em vez de empurrar uma solução pronta. Depois criamos automações sob medida para os desafios do seu marketing: rotinas que consomem tempo, produção recorrente de materiais, fluxos de conteúdo. O resultado é um time que produz mais, gasta menos e mantém a identidade da marca.</p></div></div>
+      <div class="faq-i"><button type="button" class="faq-q" aria-expanded="false"><span>Como funciona a Gestão de Marketing?</span><i></i></button><div class="faq-a"><p>Trabalhamos lado a lado com o seu time atual, seja ele de uma ou de dez pessoas. Ajudamos a criar campanhas e ações, e a conectar o marketing ao time de vendas. O foco é sempre resultado que dá para medir, não volume de entregas.</p></div></div>
+      <div class="faq-i"><button type="button" class="faq-q" aria-expanded="false"><span>Quanto tempo leva uma transformação de marca?</span><i></i></button><div class="faq-a"><p>Depende do ponto de partida. A base de uma marca costuma levar de 8 a 12 semanas. Uma transformação completa, com a experiência de marca incluída, leva de 4 a 6 meses, ou mais quando envolve diretoria e conselho. Na primeira reunião definimos juntos um prazo realista.</p></div></div>
+      <div class="faq-i"><button type="button" class="faq-q" aria-expanded="false"><span>Quanto custa um projeto de branding?</span><i></i></button><div class="faq-a"><p>Mais do que um logotipo de freelancer, menos do que um carro novo para a empresa. Uma base de marca sólida começa na casa dos cinco dígitos, e uma transformação completa pode chegar ao dobro disso. Cada proposta é montada do zero, a partir da sua necessidade. Sem pacote fechado e sem custo escondido.</p></div></div>
+      <div class="faq-i"><button type="button" class="faq-q" aria-expanded="false"><span>E se eu ainda não sei o que quero?</span><i></i></button><div class="faq-a"><p>Ótimo, é para isso que existimos. A maioria dos clientes chega com uma intuição, não com um plano. Nós ouvimos, perguntamos, organizamos as ideias e, no fim, você sabe o que quer. Às vezes é algo bem diferente do que imaginava.</p></div></div>
+      <div class="faq-i"><button type="button" class="faq-q" aria-expanded="false"><span>Como começa um projeto?</span><i></i></button><div class="faq-a"><p>Com uma conversa. Escreva para a gente e conte, em poucas linhas, o que você quer construir. Respondemos em até um dia útil. Se houver sintonia, enviamos uma proposta. Se não houver, indicamos alguém mais adequado para você.</p></div></div>
   </div>
 </section>
 
