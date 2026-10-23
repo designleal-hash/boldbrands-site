@@ -322,3 +322,19 @@ body.lock{overflow:hidden}
 @media(max-width:800px){.team-facts{grid-template-columns:1fr}}
 .faq{border-top:1px solid var(--line)}
 .method{border-top:1px solid var(--line)}
+
+/* cartão de contato no mobile: mostra "Vamos conversar?" acima do nome */
+@media(max-width:520px){
+  .cc-txt small.cc-desk{display:block;font-size:11px;color:var(--g3)}
+  .contact-card i{display:none}
+}
+/* método, mobile: o GIF do passo 1 aparece inteiro (sem cortar o texto) */
+@media(max-width:900px){#passo-1 .sph{aspect-ratio:4/5}}
+@media(max-width:520px){
+  .nav{gap:10px}
+  .logo img{height:20px}
+  .contact-card{gap:8px;padding:4px 12px 4px 4px;flex:none}
+  .contact-card img{width:34px;height:34px}
+  .cc-txt small.cc-desk{white-space:nowrap;font-size:10px}
+  .cc-txt b{white-space:nowrap;font-size:13px}
+}
