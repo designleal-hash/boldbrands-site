@@ -320,3 +320,5 @@ body.lock{overflow:hidden}
 .tf-l{font-size:13px;font-weight:500;color:var(--g2);margin-bottom:10px}
 .team-facts p:not(.tf-l){font-size:clamp(14px,1.15vw,17px);line-height:1.5;color:var(--g3);max-width:30ch}
 @media(max-width:800px){.team-facts{grid-template-columns:1fr}}
+.faq{border-top:1px solid var(--line)}
+.method{border-top:1px solid var(--line)}
