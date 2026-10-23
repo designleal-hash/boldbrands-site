@@ -16,7 +16,7 @@ Landing page estática (HTML + CSS + JS). Não precisa instalar nada para editar
 | Thumbnails do portfólio (home e página Cases) | `img/thumbs/` — imagens **16:9 (1920×1080)**. Para trocar, substitua o arquivo mantendo o nome. Elas aparecem em preto e branco e ganham cor no mouse. |
 | Páginas de cada case | `cases/<nome-do-case>/index.html` (textos) e `cases/<nome-do-case>/media/` (imagens) |
 | Lista de todos os cases | `cases/index.html` |
-| Fotos dos sócios | `img/socio-bruno.jpg`, `socio-eduardo.jpg`, `socio-felipe.jpg` (retrato 3:4) |
+| Fotos dos sócios | `img/socio-bruno.webp`, `socio-eduardo.webp`, `socio-felipe.webp` (retrato 3:4) |
 | Cores e tamanhos | `style.css`, no topo, em `:root` |
 | Logos | pasta `logo/` |
 
