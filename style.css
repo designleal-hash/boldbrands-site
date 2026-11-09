@@ -338,3 +338,20 @@ body.lock{overflow:hidden}
   .cc-txt small.cc-desk{white-space:nowrap;font-size:10px}
   .cc-txt b{white-space:nowrap;font-size:13px}
 }
+
+/* rodapé: cartão de contato grande (WhatsApp) */
+.contact-card.foot{display:inline-flex;margin-top:48px;gap:clamp(14px,1.6vw,24px);padding:clamp(8px,.8vw,12px) clamp(24px,2.6vw,44px) clamp(8px,.8vw,12px) clamp(8px,.8vw,12px);border-color:#444}
+.contact-card.foot img{width:clamp(64px,6vw,96px);height:clamp(64px,6vw,96px)}
+.contact-card.foot .cc-txt small{font-size:clamp(13px,1.1vw,16px)}
+.contact-card.foot .cc-txt b{font-size:clamp(20px,2.2vw,32px);letter-spacing:-.02em;line-height:1.1}
+.contact-card.foot .cc-txt em{font-size:clamp(11px,.95vw,14px)}
+.contact-card.foot i{font-size:clamp(20px,2vw,30px);margin-left:clamp(8px,1.4vw,24px)}
+@media(max-width:520px){
+  .contact-card.foot{display:flex;width:100%;justify-content:flex-start}
+  .contact-card.foot .cc-txt small.cc-desk{display:block;font-size:12px;white-space:normal}
+  .contact-card.foot .cc-txt b{font-size:20px;white-space:normal}
+  .contact-card.foot .cc-txt em{display:block;font-size:11px}
+  .contact-card.foot i{display:block;margin-left:auto}
+  .contact-card.foot img{width:60px;height:60px}
+}
+.contact-card.foot .cc-txt em{display:block}
