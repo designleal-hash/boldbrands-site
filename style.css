@@ -355,3 +355,8 @@ body.lock{overflow:hidden}
   .contact-card.foot img{width:60px;height:60px}
 }
 .contact-card.foot .cc-txt em{display:block}
+
+/* rodapé: título menor e botão com a largura do conteúdo */
+footer .huge{font-size:clamp(34px,5.4vw,88px);max-width:none;line-height:1.04;padding-bottom:.06em}
+footer .contact-card.foot{display:inline-flex;width:fit-content;max-width:100%;margin-top:clamp(36px,4vw,64px)}
+@media(max-width:520px){footer .contact-card.foot{display:flex;width:100%}}
